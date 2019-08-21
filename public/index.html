@@ -1,0 +1,65 @@
+<!DOCTYPE html><html><head>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="peer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/3.3.3/screenfull.js"></script>
+    <script src="p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+
+
+    <div class="wrapper">
+    <div class="top">
+      <div class="recording"></div>
+      <div class="title">Live-web:chat </div>
+      <div class="onlineusers"><p> Users online: </p> </div>
+    </div>
+
+    <div class="middle">
+
+
+    <div class="center">
+    <input type="text" id="yourName" placeholder="enter your name">
+    <input type="button" id="nameButton" value="submit">
+
+    <div id="videoCon">
+    <video id = "othervideo"></video>
+    <video id="thevideo" muted>
+    </video>
+    <button type="button" class="control">
+      take control </button>
+    </div>
+
+    <video id = "screencap"></video>
+    <!-- <input type='text' id="idToCall" value='idToCall'>
+    <input type='button' id="callbutton"> -->
+    <button type="button" id="endchat">
+      Close Chat </button>
+    <button type="button" id="flipvideo">
+      Flip video </button>
+    <button type="button" class="control">
+      take control </button>
+
+      <!-- <button type="button" id="Full"> -->
+        <!-- FULLLL </button> -->
+    </div>
+
+    <div class="onlinelist">
+    </div>
+
+    </div>
+
+    <div class="bottombar">
+      <button id="pickup">Incoming Call - Click to pick up! </button>
+    </div>
+
+</div>
+
+    <script type="text/javascript">
+      window.addEventListener('load', initialize())
+    </script>
+
+
+</body></html>
